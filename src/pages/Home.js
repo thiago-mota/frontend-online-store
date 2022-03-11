@@ -1,5 +1,6 @@
 import React from 'react';
 import { getProductsFromCategoryAndQuery } from '../services/api';
+import Categories from '../components/Categories';
 
 class Home extends React.Component {
   constructor() {
@@ -66,6 +67,7 @@ class Home extends React.Component {
               </div>
             ))
           )}
+        <Categories />
       </div>
     );
   }
