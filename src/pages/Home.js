@@ -52,7 +52,7 @@ class Home extends React.Component {
         <p data-testid="home-initial-message">
           Digite algum termo de pesquisa ou escolha uma categoria.
         </p>
-        { products === 0
+        { products.length === 0
           ? <p>Nenhum produto foi encontrado</p>
           : (
             products.map((product) => (
